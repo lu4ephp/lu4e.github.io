@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5faff;
+  color: #333;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: #0077cc;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #ffdd57;
+}
+
+/* === MAIN CONTAINER === */
+.edu-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.edu-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+  color: #0077cc;
+}
+
+/* === TWO COLUMNS FLEX === */
+.edu-columns {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.edu-section {
+  flex: 1 1 45%;
+  background-color: white;
+  padding: 40px; /* малку повеќе внатрешен простор */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  min-height: 500px; /* 🚀 ова го прави блокот подолг */
+}
+
+
+.edu-section h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #222;
+}
+
+.edu-section p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.edu-section img {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;          /* фиксна висина */
+  object-fit: contain;    /* ја собира целата слика без да ја сече */
+  background-color: white; /* ако има празно – изгледа поубаво */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto;
+}
+/* === RESPONSIVE === */
+@media (max-width: 800px) {
+  .edu-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
